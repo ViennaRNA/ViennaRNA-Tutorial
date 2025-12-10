@@ -54,7 +54,7 @@ jobs:
           mv ${FILE1_POST}_tmp ${FILE1_POST}
           mv ${FILE2_POST}_tmp ${FILE2_POST}
           for file in $OTHER_FILES; do
-            rm -r ${file}
+            rm -rf ${file}
             mv ${file}_tmp ${file}
           done
           git add -A
