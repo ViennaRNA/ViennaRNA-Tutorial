@@ -1,0 +1,14 @@
+name: viennarna-tutorial
+channels:
+  - conda-forge
+  - bioconda
+  - default
+dependencies:
+  - python>=3.11
+  - viennarna>=2.7
+  - jupyter
+  - matplotlib
+  - numpy
+  - pillow
+  - conda-forge::imagemagick
+  - cairosvg

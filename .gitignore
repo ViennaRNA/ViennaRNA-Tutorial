@@ -1,0 +1,9 @@
+.ipynb_checkpoints/
+*.png
+*.svg
+*.ps
+*.jpg
+*.out
+*.aln
+*.fa
+*.samples
