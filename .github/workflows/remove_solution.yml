@@ -18,7 +18,7 @@ env:
   FILE1_POST: 1_ViennaRNA_Introduction_No_Solution.ipynb
   FILE2_PRE: 2_Practical_Example.ipynb
   FILE2_POST: 2_Practical_Example_No_Solution.ipynb
-  OTHER_FILES: README.md 2_input .github/workflows
+  OTHER_FILES: README.md 2_input .github/workflows .gitignore viennarna-tutorial.yml
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -54,7 +54,7 @@ jobs:
           mv ${FILE1_POST}_tmp ${FILE1_POST}
           mv ${FILE2_POST}_tmp ${FILE2_POST}
           for file in $OTHER_FILES; do
-            rm -r ${file}
+            rm -rf ${file}
             mv ${file}_tmp ${file}
           done
           git add -A
